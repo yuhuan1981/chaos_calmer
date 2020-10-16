@@ -476,6 +476,16 @@ define Device/tl-wr710n-v2
     CONSOLE := ttyATH0,115200
 endef
 
+define Device/tl-wr2041n-v1
+  $(Device/tplink-16mlzma)
+  DEVICE_TITLE := TP-LINK TL-WR2041N/ND v1
+  DEVICE_TITLE := TP-LINK TL-WR2041N v1
+  BOARDNAME := TL-WDR3500
+  DEVICE_PROFILE := TLWR2041
+  TPLINK_HWID := 0x20410001
+endef
+TARGET_DEVICES += tl-wr2041n-v1
+
 define Device/tl-wr720n-v3
     $(Device/tplink-4mlzma)
     BOARDNAME := TL-WR720N-v3
